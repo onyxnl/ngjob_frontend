@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+.mt{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.btn-red{
+    width: 160px;
+    height: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: #f36969;
+    color: #ffffff;
+    border: 0px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.btn-red:hover {
+    background: #23c0e9;
+    color: white;
+    border: 1px solid #ffffff40;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+h1{
+    color: white !important;
+}

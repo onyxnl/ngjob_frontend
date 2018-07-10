@@ -1,0 +1,27 @@
+<div class="jp_popular_category_main_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="jp_popu_cate_heading_wrapper">
+                    <h4>Popular Categories</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" *ngFor ="let category of categories">
+                <div class="jp_popu_cate_box_main_wrapper jp_popu_cate_box_main_wrapper_second">
+                    <div class="jp_top_jobs_category_wrapper">
+                        <div class="jp_top_jobs_category">
+                            <i class="fa fa-code"></i>
+                            <h3><a routerLink="#">{{category.name}}</a></h3>
+                            <p>(240 jobs)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+        </div>
+    </div>
+</div>

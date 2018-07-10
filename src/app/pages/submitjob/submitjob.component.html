@@ -1,0 +1,43 @@
+<div class="col-md-8 col-xs-12 col-md-offset-2 mt">
+    <h1 class="text-white text-center">Submit your Post</h1>
+    <form action="" method="POST" (submit)="onFormSubmit(JobForm)" #JobForm = "ngForm">
+      <div class="form-group">
+        <label for="Title">Title</label>
+        <input type="text" class="form-control" name ="title" [(ngModel)]='job.title' aria-describedby="titleHelp" placeholder="Enter Title">
+      </div>
+      <div class="form-group">
+          <label for="Description">Description</label>
+          <textarea name="description" id="desc" cols="30" rows="10" name ="description" [(ngModel)]='job.description' class="form-control" placeholder="Enter Description" id="desc"></textarea>
+          
+      </div>
+      <div class="form-group">
+          <label for="Salary">Salary</label>
+          <input type="text" class="form-control" id="salary" name ="salary" [(ngModel)]='job.salary' aria-describedby="salary" placeholder="Enter Salary">
+      </div>
+      <div class="form-group">
+          <label for="Category">Category</label>  
+          <select class="custom-select mb-2 mr-sm-2 mb-sm-0 py-3 form-control" name ="category_id" id="category" [(ngModel)]='job.category_id'>
+              <option selected>Choose...</option>
+              <option *ngFor="let category of categories"  value="{{category.id}}">{{category.name}}</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="User">User</label>  
+          <select class="custom-select mb-2 mr-sm-2 mb-sm-0 py-3 form-control" name ="agent_id" [(ngModel)]='job.agent_id' id="user">
+              <option selected>Choose...</option>
+              <option value="1">Job Seeker</option>
+              <option value="2">Employer</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="Company">Company Name</label>
+        <input type="text" class="form-control" id="comname" [(ngModel)]='job.company' name ="company" placeholder="Enter Company Name">
+      </div>
+      <div class="form-group">
+          <label for="howto">How to Apply</label>
+          <input type="text" class="form-control" id="howto" [(ngModel)]='job.how_to_apply' name ="how_to_apply" placeholder="Enter How To Apply">
+        </div>
+      
+      <button class="btn btn-red">Submit</button>
+    </form>
+  </div>
